@@ -1,0 +1,49 @@
+main {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+main h1 {
+  margin-bottom: 35px;
+  color: #222;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.tarjetas article {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tarjetas img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tarjetas h2 {
+  color: #222;
+}
+
+.tarjetas h3 {
+  color: #2563a6;
+}
+
+.tarjetas p {
+  color: #555;
+}
+
+@media (max-width: 700px) {
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+}
